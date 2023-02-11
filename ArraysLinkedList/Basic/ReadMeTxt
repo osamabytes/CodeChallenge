@@ -1,0 +1,18 @@
+Tasks
+    Arrays:
+        1. Create an array of size n and initialize it with a set of values.
+        2. Print the elements of an array.
+        3. Find the minimum and maximum value in an array.
+        4. Sum the elements of an array.
+        5. Calculate the average of the elements in an array.
+        6. Search for a specific value in an array.
+        7. Delete an element from an array.
+        8. Insert an element into an array at a specific position.
+        9. Reverse the elements of an array.
+    Linked Lists:
+        1. Create a singly linked list with insert and print operations.
+        2. Find the length of a singly linked list.
+        3. Search for a specific value in a singly linked list.
+        4. Delete a node from a singly linked list.
+        5. Insert a node into a singly linked list at a specific position.
+        6. Reverse a singly linked list.

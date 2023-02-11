@@ -1,0 +1,20 @@
+list of topics you can start with to revise your basic skills in data structures and algorithms:
+    1. Arrays and Linked Lists
+    2. Stacks and Queues
+    3. Trees (Binary Trees, BSTs, Heaps)
+    4. Hash Tables
+    5. Graphs
+    6. Sorting algorithms (Bubble sort, Quick sort, Merge sort, etc.)
+    7. Searching algorithms (Linear search, Binary search)
+    8. Dynamic Programming
+    9. Greedy Algorithms
+    10. Divide and Conquer Algorithms
+Once you feel comfortable with the basics, you can move on to advanced topics, such as:
+    1. Advanced Tree Structures (Tries, Segment Trees, etc.)
+    2. Advanced Graph Algorithms (Minimum Spanning Trees, Shortest Paths, etc.)
+    3. Advanced Dynamic Programming (Longest Common Subsequence, Knapsack Problem, etc.)
+    4. Advanced Sorting Algorithms (Radix Sort, Counting Sort, etc.)
+    5. Advanced Searching Algorithms (KMP Algorithm, Rabin-Karp Algorithm, etc.)
+    6. String algorithms (Knuth-Morris-Pratt, Rabin-Karp)
+    7. Computational Geometry algorithms
+    8. NP-complete problems
