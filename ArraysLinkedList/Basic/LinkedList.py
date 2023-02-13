@@ -24,11 +24,11 @@ class LinkedList:
             prev = None
             current = self.head
             for _ in range(pos):
-                prev = current
                 current = current.next
             new_node = Node(data)
-            prev.next = new_node
-            new_node.next = current
+            prev = current.next
+            current.next = new_node
+            new_node.next = prev
     def Print(self):
         current = self.head
         while current is not None:
@@ -64,6 +64,19 @@ class LinkedList:
             previous = current
             current = current.next
         print("Value not Found")
+    # N1 -> N2 -> N3
+    # N3 -> N2 -> N1
+    def SetReverse(self):
+        self.head = self.DoReverse(None, self.head)
+    def DoReverse(self, prev, current):
+        if current is None:
+            return prev
+        Node = self.DoReverse(current, current.next)
+        if Node.next is None:
+            Node.next = prev
+        else:
+            current.next = prev
+        return Node
     def Length(self):
         return self.length
 
@@ -80,4 +93,6 @@ linked_list.Search(4)
 linked_list.Delete(2)
 linked_list.Print()
 linked_list.InsertAtPos(2, 16)
+linked_list.Print()
+linked_list.SetReverse()
 linked_list.Print()
