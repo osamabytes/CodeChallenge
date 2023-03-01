@@ -33,6 +33,23 @@ def GetMergedListofTwoLists(list1 = [], list2 = []):
     new_list = list1 + list2
     new_list.sort()
     return new_list
+def Rotate(arr = [], k = 0):
+    if len(arr) == 0:
+        return []
+    elif k == 0:
+        print("Position k must not be 0")
+    else:
+        start_pos = (len(arr) - 1) - (k - 1)
+        end_pos = len(arr)
+        part_arr = arr[start_pos:]
+        arr[start_pos: end_pos] = []
+        arr = part_arr + arr
+        return arr
+def LargestSmallest(arr = []):
+    if len(arr) == 0:
+        return None
+    else:
+        pass
 #end functions
 
 #Remove duplicates from an unsorted array.
@@ -55,3 +72,14 @@ if len(merge_list) == 0:
     print("Add data to List. Empty list is not allowed for further processing")
     sys.exit()    
 print(merge_list)
+
+# Rotate the array
+new_arr = merge_list
+new_arr = Rotate(new_arr, 3)
+if new_arr is None:
+    print("Please make sure to provide some number for position")
+    sys.exit()
+if len(new_arr) == 0:
+    print("Array for the Rotation must not be empty")
+    sys.exit()
+print(new_arr)
