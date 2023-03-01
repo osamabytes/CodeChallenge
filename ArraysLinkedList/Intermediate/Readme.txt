@@ -3,7 +3,7 @@ Arrays:
     2. Find the missing number in an array of consecutive integers.(Done)
     3. Merge two sorted arrays into a third sorted array.(Done)
     4. Rotate an array by a certain number of positions.(Done)
-    5. Find the largest and smallest numbers in an array.
+    5. Find the largest and smallest numbers in an array.(Done)
     6. Find the common elements in two arrays.
     7. Find the majority element in an array.
     8. Implement a dynamic array.

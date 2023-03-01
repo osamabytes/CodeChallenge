@@ -48,8 +48,18 @@ def Rotate(arr = [], k = 0):
 def LargestSmallest(arr = []):
     if len(arr) == 0:
         return None
+    elif len(arr) == 1:
+        return {"small": arr[0], "large": arr[0]}
     else:
-        pass
+        small = arr[0]
+        large = arr[0]
+        for i in range(len(arr) - 1):
+            if arr[i + 1] < small:
+                small = arr[i + 1]
+            if arr[i + 1] > large: 
+                large = arr[i + 1]
+        return {"small": small, "large": large}
+
 #end functions
 
 #Remove duplicates from an unsorted array.
@@ -83,3 +93,11 @@ if len(new_arr) == 0:
     print("Array for the Rotation must not be empty")
     sys.exit()
 print(new_arr)
+
+# Find Small and Large in Array
+small_large_obj = LargestSmallest(new_arr)
+if(small_large_obj is None):
+    print("To find the small or large number in array, it should not be empty")
+    sys.exit()
+print(type(small_large_obj))
+print(small_large_obj)
